@@ -13,8 +13,8 @@ public class Principal {
 
     public static void main(String[] args) {
         Funcoes funcoes = new Funcoes();
-        funcoes.validarExistencia(); // Garante que os arquivos necessários existem
-        AtomicReference<List<Tarefa>> tarefas = new AtomicReference<>(funcoes.lerTarefas()); // Lê as tarefas salvas previamente
+        funcoes.validarExistencia(); 
+        AtomicReference<List<Tarefa>> tarefas = new AtomicReference<>(funcoes.lerTarefas());
 
         JFrame frame = new JFrame("Lista de Compras");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
